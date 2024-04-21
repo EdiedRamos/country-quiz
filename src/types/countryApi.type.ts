@@ -1,4 +1,6 @@
-export interface CountryApiI {
+export type CountryApiType = Array<Country>;
+
+export interface Country {
   flags: Flags;
   name: Name;
   capital: string[];
