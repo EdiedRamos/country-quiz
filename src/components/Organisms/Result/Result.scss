@@ -1,0 +1,11 @@
+@import "/src/general/styles/index.scss";
+
+.result {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  background-color: $blue-100;
+  padding: 1rem;
+  width: 400px;
+  height: 350px;
+}
