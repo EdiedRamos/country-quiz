@@ -1,6 +1,10 @@
 @import "/src/general/styles/index.scss";
 
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   border: none;
   border-radius: 10px;
   background-color: $blue-100;
