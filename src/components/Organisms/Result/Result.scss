@@ -6,6 +6,25 @@
   border-radius: 1rem;
   background-color: $blue-100;
   padding: 1rem;
-  width: 400px;
-  height: 400px;
+  max-width: 400px;
+  min-height: 412px;
+
+  &__congrats,
+  &__result {
+    color: $white;
+    text-align: center;
+  }
+
+  &__congrats {
+    margin-top: 12px;
+    padding: 0 1rem;
+  }
+
+  &__result {
+    margin-top: 16px;
+  }
+
+  &__play-again {
+    margin: 48px auto 0 auto;
+  }
 }

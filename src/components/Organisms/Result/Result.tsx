@@ -7,9 +7,11 @@ export const Result = () => {
   return (
     <section className="result">
       <img src={CongratsImg} alt="Congrats icon" />
-      <h2>Congrats! You completed the quiz.</h2>
-      <p>You answer 4/10 correctly</p>
-      <Button className="button--selected">Play again</Button>
+      <h2 className="result__congrats">Congrats! You completed the quiz.</h2>
+      <p className="result__result">You answer 4/10 correctly</p>
+      <Button className="button--selected result__play-again">
+        Play again
+      </Button>
     </section>
   );
 };
