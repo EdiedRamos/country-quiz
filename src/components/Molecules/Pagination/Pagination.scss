@@ -3,14 +3,14 @@
 .pagination {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px;
 
   &__button {
     border: none;
     border-radius: 50%;
     background-color: $blue-100;
-    width: 45px;
-    height: 45px;
+    width: 42px;
+    height: 42px;
     color: $white;
     font-size: 1rem;
 
