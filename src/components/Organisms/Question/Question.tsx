@@ -9,7 +9,7 @@ export const Question = () => {
       <p className="question__description">
         Which country is Kuala Lumpur the capital?
       </p>
-      <Options />
+      <Options className="question__options" />
     </section>
   );
 };
