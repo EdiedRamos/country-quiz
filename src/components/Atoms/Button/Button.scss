@@ -1,0 +1,21 @@
+@import "/src/general/styles/index.scss";
+
+.button {
+  border: none;
+  border-radius: 10px;
+  background-color: $blue-200;
+  width: 200px;
+  max-width: 200px;
+  height: 50px;
+  color: $white;
+  font-size: $font-100;
+
+  &:hover {
+    cursor: pointer;
+    background: $primary-gradient;
+  }
+
+  &--selected {
+    background: $primary-gradient;
+  }
+}
