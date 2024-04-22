@@ -1,5 +1,7 @@
 export type CountryApiType = Array<Country>;
 
+export type CountriesType = Array<Country>;
+
 export interface Country {
   flags: Flags;
   name: Name;

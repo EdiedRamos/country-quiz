@@ -1,7 +1,3 @@
-export interface QuestionI {
-  id: string;
-  statement: string;
-  options: Array<string>;
-}
+import { QuestionI } from "./question.type";
 
 export type QuestionsType = Array<QuestionI>;
