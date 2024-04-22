@@ -1,6 +1,10 @@
 import "./Pagination.scss";
 
-export const Pagination = () => {
+type PaginationProps = {
+  className?: string;
+};
+
+export const Pagination = ({ className }: PaginationProps) => {
   const itemsLength = 10;
   const items = Array(itemsLength)
     .fill(0)
@@ -9,7 +13,7 @@ export const Pagination = () => {
   console.log({ items });
 
   return (
-    <div className="pagination">
+    <div className={`pagination ${className}`}>
       {items.map((val) => (
         <button className="pagination__button" key={val}>
           {val}
