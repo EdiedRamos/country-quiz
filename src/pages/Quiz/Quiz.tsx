@@ -4,7 +4,7 @@ import { QuizMaker } from "@/services";
 
 import "./Quiz.scss";
 
-import { Result } from "@/components/Organisms";
+import { Question } from "@/components/Organisms";
 
 export const Quiz = () => {
   useEffect(() => {
@@ -13,7 +13,7 @@ export const Quiz = () => {
 
   return (
     <section className="quiz">
-      <Result />
+      <Question />
     </section>
   );
 };
