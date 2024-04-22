@@ -1,4 +1,4 @@
-import { Pagination } from "@/components/Molecules";
+import { Options, Pagination } from "@/components/Molecules";
 import "./Question.scss";
 
 export const Question = () => {
@@ -9,6 +9,7 @@ export const Question = () => {
       <p className="question__description">
         Which country is Kuala Lumpur the capital?
       </p>
+      <Options />
     </section>
   );
 };
