@@ -1,6 +1,9 @@
-import { Options, Pagination } from "@/components/Molecules";
+import {
+  Options,
+  Pagination,
+  QuestionDescription,
+} from "@/components/Molecules";
 import "./Question.scss";
-import { QuestionDescription } from "@/components/Atoms";
 
 export const Question = () => {
   return (
