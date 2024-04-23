@@ -7,9 +7,10 @@ interface QuizContext {
   currentQuestion: QuestionI | null;
   currentQuestionId: string;
   answeredQuestion: string[];
-  nextQuestion: number;
   score: number;
+  correctAnswer: string;
   onSelectedQuestion: (questionId: string) => void;
+  onAnswer: (answerId: string) => void;
 }
 
 export const QuizContext = createContext<QuizContext | undefined>(undefined);
