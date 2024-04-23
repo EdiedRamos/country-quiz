@@ -4,7 +4,10 @@ import { useQuiz } from "@/hooks/useQuiz";
 export const PageManager = () => {
   const quizState = useQuiz();
 
-  return quizState?.answeredQuestion.length === quizState?.questions.length ? (
+  if (!quizState) return <></>;
+
+  return quizState.answeredQuestion.length === quizState.questions.length &&
+    quizState.questions.length > 0 ? (
     <Result />
   ) : (
     <Question />
