@@ -1,5 +1,9 @@
-import React from "react";
+import { Question, Result } from "@/components/Organisms";
+import { useQuiz } from "@/hooks/useQuiz";
 
 export const PageManager = () => {
-  return <div>PageManager</div>;
+  const x = useQuiz();
+
+  // return <Result />;
+  return <Question />;
 };

@@ -5,23 +5,4 @@
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
-
-  &__button {
-    border: none;
-    border-radius: 50%;
-    background-color: $blue-100;
-    width: 42px;
-    height: 42px;
-    color: $white;
-    font-size: 1rem;
-
-    &:hover {
-      cursor: pointer;
-      background: $primary-gradient;
-    }
-  }
-
-  &__active {
-    background: $primary-gradient;
-  }
 }

@@ -1,0 +1,28 @@
+@import "/src/general/styles/index.scss";
+
+.pagination__button {
+  border: none;
+  border-radius: 50%;
+  background-color: $blue-100;
+  width: 42px;
+  height: 42px;
+  color: $white;
+  font-size: 1rem;
+
+  &:hover {
+    cursor: pointer;
+    background: $primary-gradient;
+  }
+
+  &--active {
+    background: $primary-gradient;
+  }
+
+  &--disabled {
+    filter: opacity(0.5);
+    &:hover {
+      background: $blue-100;
+      cursor: auto;
+    }
+  }
+}
