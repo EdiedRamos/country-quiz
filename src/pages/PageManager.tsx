@@ -2,8 +2,11 @@ import { Question, Result } from "@/components/Organisms";
 import { useQuiz } from "@/hooks/useQuiz";
 
 export const PageManager = () => {
-  const x = useQuiz();
+  const quizState = useQuiz();
 
-  // return <Result />;
-  return <Question />;
+  return quizState?.answeredQuestion.length === quizState?.questions.length ? (
+    <Result />
+  ) : (
+    <Question />
+  );
 };
