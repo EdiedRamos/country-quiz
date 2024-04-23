@@ -3,6 +3,7 @@ import { Button } from "@/components/Atoms";
 import { CheckRound, CloseRound } from "@/assets";
 
 import "./Options.scss";
+import { useQuiz } from "@/hooks/useQuiz";
 
 type OptionsProps = {
   className?: string;
@@ -15,14 +16,13 @@ const renderIncorrect = (condition: boolean) =>
   condition && <img src={CloseRound} />;
 
 export const Options = ({ className }: OptionsProps) => {
-  const options = ["Sweden", "Vietnam", "Malaysia", "Austria"];
+  const quizState = useQuiz();
 
   return (
     <div className={`options ${className}`}>
-      {options.map((option, index) => (
-        <Button className={index === 1 ? "button--selected" : ""} key={option}>
-          {option} {renderCorrect(index === 3)}
-          {renderIncorrect(index === 1)}
+      {quizState?.currentQuestion?.options.map((option, index) => (
+        <Button className={""} key={option.id}>
+          {option.content}
         </Button>
       ))}
     </div>
