@@ -11,6 +11,7 @@ interface QuizContext {
   correctAnswer: string;
   onSelectedQuestion: (questionId: string) => void;
   onAnswer: (answerId: string) => void;
+  onRestart: () => void;
 }
 
 export const QuizContext = createContext<QuizContext | undefined>(undefined);

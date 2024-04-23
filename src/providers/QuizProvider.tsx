@@ -30,6 +30,7 @@ export const QuizProvider = ({ children }: QuizProviderProps) => {
   const handleInitGame = () => {
     setScore(0);
     setCorrectAnswer("");
+    setAnsweredQuestion([]);
     QuizMaker.createQuestions(10).then((quiz) => {
       if (!quiz) return;
       setQuestions(quiz);
@@ -60,6 +61,7 @@ export const QuizProvider = ({ children }: QuizProviderProps) => {
     correctAnswer,
     onSelectedQuestion: handleSelectQuestion,
     onAnswer: handleVerifyAnswer,
+    onRestart: handleInitGame,
   };
 
   return <QuizContext.Provider value={values}>{children}</QuizContext.Provider>;

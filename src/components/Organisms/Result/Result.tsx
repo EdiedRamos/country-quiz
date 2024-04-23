@@ -14,7 +14,10 @@ export const Result = () => {
       <p className="result__result">
         You answer {quizState?.score}/10 correctly
       </p>
-      <Button className="button--selected result__play-again">
+      <Button
+        onClick={quizState?.onRestart}
+        className="button--selected result__play-again"
+      >
         Play again
       </Button>
     </section>
