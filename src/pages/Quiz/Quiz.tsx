@@ -1,11 +1,14 @@
-import "./Quiz.scss";
+import { QuizProvider } from "@/providers/QuizProvider";
 
-import { Question } from "@/components/Organisms";
+import "./Quiz.scss";
+import { PageManager } from "../PageManager";
 
 export const Quiz = () => {
   return (
     <section className="quiz">
-      <Question />
+      <QuizProvider>
+        <PageManager />
+      </QuizProvider>
     </section>
   );
 };
